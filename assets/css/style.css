@@ -86,8 +86,15 @@ h2{
 
 }
 .container .card img{
-    width: 350px
+    width: 350px;
+    transition: 1s;
 
+}
+
+.container .card img:hover{
+    transform: scale(1.03);
+    transition: 1s;
+    
 }
 
 .bombones .card img{
@@ -183,9 +190,11 @@ nav{
 
 }
 
+
 .nav-menu-link{
     padding: 8px 12px;
     border-radius:  3px;
+    transition: 0.4s ;
 
 }
 
@@ -229,15 +238,11 @@ nav{
     display: flex;
     justify-content: end;
     
-   
-   
-    
 }
 
 footer{
     background-color: brown;
     margin-bottom: -4px;
-    
 
 }
 
@@ -270,7 +275,14 @@ footer{
     font-size: 20px;
     margin: 30px;
     text-transform: uppercase;
+    border-radius: 3px;
+    transition: 1s;
     
+}
+
+.information a:hover{
+    color: rgb(160, 160, 160);
+    transition: 0.5s;
 }
 
 .address p{
@@ -298,6 +310,7 @@ footer{
     font-size: 50px;
     text-align: left;
     padding: 40px;
+    
 
 }
 
@@ -451,12 +464,13 @@ footer{
 
 .contact2 h2{
     text-align: left;
+    
 
 }
 
 .contact2 p{
     text-align: left;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .contact3 h2{
@@ -628,8 +642,6 @@ and (max-width:768px){
         flex-wrap: wrap;
         margin: auto;
         
-     
-        
     }
 
     .tricks{
@@ -691,22 +703,41 @@ and (max-width:768px){
 
 }
 
+@media  (min-width:768px)
+and  (max-width: 1080px){
+
+    .social img{
+        right: -30px;
+ 
+    }
+
+    .hero{
+        max-width: 2700px;
+        width: 100%;
+        margin-bottom: -4px;
+        position:relative;
+       
+    }
+    
+    .hero h3{
+        font-size: 10vw;
+        top: 125px;
+        left: 6%;
+    
+    }
+         
+}
 
 @media (min-width: 1080px)
-and  (max-width: 1200px) {
+ {
+ 
     .hero h3{
-        top: 13vw;
+        font-size: 11vw;
+        top: 95px;
+        left: 23%;
 
     }
-
-    .foot .container{
-        display: grid;
-        text-align: center;
-        align-items: center;
-
-    
-    }
-    
+         
     .foot img {
         position:relative;
         height: 150px;
@@ -720,20 +751,23 @@ and  (max-width: 1200px) {
 
     }
 
-}
-
-@media  (min-width:768px)
-and  (max-width: 1080px){
-    .social img{
-        right: -30px;
- 
-    }
+@media (min-width: 1366px){
 
     .hero h3{
-      top: 150px;
+        top:130px;
 
     }
 
-    
+    .aboutus h1{
+       
+        font-size:9vw;
+        top: 89px;;
+        left: 5%;
+        
+       
+
+    }
+
+}
 
 }
